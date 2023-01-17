@@ -1,0 +1,30 @@
+package mypackage;
+import java.io.*;
+
+public class inputoutput {
+
+	public static void main(String[] args) {
+		try{
+			FileReader Reader= new FileReader("this pc://Docement//hello.txt");
+			BufferedReader buffer=new BufferedReader(Reader);
+			String cstr;
+			while ((cstr=buffer.readLine())!=null)
+				System.out.println(cstr);
+
+			
+			
+			}
+		catch(FileNotFoundException e)
+		{
+			System.out.println(e);
+		
+		}
+		catch(IOException e)
+		{
+			System.out.println(e);
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}

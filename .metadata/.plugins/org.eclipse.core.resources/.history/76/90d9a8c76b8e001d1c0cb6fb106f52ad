@@ -1,0 +1,33 @@
+package mypackage;
+import java.io.*;
+
+public class file {
+
+	public static void main(String[] args) {
+		try{
+		File f=new File("C://Users//KOMEGHAN//Desktop//H.txt");
+		if(f.exists())
+		{
+			System.out.println("exists");
+		}
+		else
+		{
+			if(f.createNewFile())
+			{
+				System.out.println("file created");
+			}
+			else
+			{
+				System.out.println("file not created");
+			}
+		}
+		// TODO Auto-generated method stub
+
+	}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+
+	}
+}
